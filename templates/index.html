@@ -16,8 +16,10 @@
     <ul>
         {% for pess in pess %}
             <li>{{ pess.NOME }}</li>
+            <form action="delPerson/{{ pess.ID }}" method="POST" style="display: inline;">
+                <button type="submit">Deletar</button>
+            </form>
         {% endfor %}
-
     </ul>    
 </body>
 </html>
