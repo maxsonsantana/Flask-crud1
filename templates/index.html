@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxson Page</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <h1>Welcome to the Maxson Page</h1>
+    <h2>Adicionar nova pessoa</h2>
+    <form action="addperson" method="POST">
+        <input type="text" name="nome" placeholder="Nome da pessoa" required>
+        <input type="text" name="sobrenome" placeholder="Sobrenome da pessoa" required>
+        <input type="submit" value="Adicionar">
+    </form>
+    <ul>
+        {% for pess in pess %}
+            <li>{{ pess.NOME }}</li>
+        {% endfor %}
+
+    </ul>    
+</body>
+</html>
